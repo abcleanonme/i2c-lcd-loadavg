@@ -41,10 +41,11 @@ while 1 == 1:
 	#print "5 Minutes:  " + avg5
 	#print "15 Minutes: " + avg15
 
-	# display "load:" and 1 minute load average on first line
+	# display "Sys Load Avg" on first line
 	lcd.lcd_display_string("  Sys Load Avg",1)
 
-	# display 5 minute and 15 minute load averages on second line
+	# display 1 minute, 5 minute, and 15 minute load averages on second line
 	lcd.lcd_display_string(avg1 + "  " + avg5 + "  " + avg15,2)
 	
+	# check and display averages every 5 seconds
 	sleep(5)
